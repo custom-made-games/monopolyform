@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>הדסה - התאמת משחק מונופול אישי</title>
+    <!-- ייבוא פונט Alef מגוגל פונטס -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
@@ -260,7 +261,7 @@
             gap: 12px;
             margin-top: 25px;
         }
-        button {
+        button, .btn-email-contact {
             font-family: 'Alef', inherit;
             padding: 12px 22px;
             border: none;
@@ -313,8 +314,6 @@
             font-weight: bold;
             box-shadow: 0 4px 6px -1px rgba(14, 165, 233, 0.2);
             transition: all 0.2s ease;
-            cursor: pointer;
-            border: none;
         }
         .btn-email-contact:hover {
             background-color: #0284c7;
@@ -342,6 +341,7 @@
     <form id="quizForm">
         <div class="step-description" id="stepDescription">שאלון פרטים למשחק מונופול בהתאמה אישית</div>
 
+        <!-- ================= עמוד 1 ================= -->
         <div class="form-step active" data-step="1">
             <div class="welcome-section">
                 <img src="" alt="לוגו הדסה" class="main-logo logo-src">
@@ -362,6 +362,7 @@
             </div>
         </div>
 
+        <!-- ================= עמוד 2 ================= -->
         <div class="form-step" data-step="2">
             <div class="form-group">
                 <label for="customerName">שם המזמינ.ה *</label>
@@ -421,9 +422,11 @@
             </div>
         </div>
 
+        <!-- ================= עמוד 3 ================= -->
         <div class="form-step" data-step="3">
             <p class="sub-label" style="font-weight: bold; margin-bottom: 20px; font-size: 14px;">עבור כל קטגוריה יש לציין שם קטגוריה ואת האתרים/שמות שבחרתם.</p>
 
+            <!-- חום -->
             <div class="color-section brown">
                 <div class="color-title">
                     <span class="color-box" style="background-color: var(--clr-brown);"></span>
@@ -438,6 +441,7 @@
                 </div>
             </div>
 
+            <!-- תכלת -->
             <div class="color-section lightblue">
                 <div class="color-title">
                     <span class="color-box" style="background-color: #bae6fd;"></span>
@@ -453,6 +457,7 @@
                 </div>
             </div>
 
+            <!-- ורוד -->
             <div class="color-section pink">
                 <div class="color-title">
                     <span class="color-box" style="background-color: var(--clr-pink);"></span>
@@ -468,6 +473,7 @@
                 </div>
             </div>
 
+            <!-- כתום -->
             <div class="color-section orange">
                 <div class="color-title">
                     <span class="color-box" style="background-color: var(--clr-orange);"></span>
@@ -483,6 +489,7 @@
                 </div>
             </div>
 
+            <!-- אדום -->
             <div class="color-section red">
                 <div class="color-title">
                     <span class="color-box" style="background-color: var(--clr-red);"></span>
@@ -498,6 +505,7 @@
                 </div>
             </div>
 
+            <!-- צהוב -->
             <div class="color-section yellow">
                 <div class="color-title">
                     <span class="color-box" style="background-color: var(--clr-yellow);"></span>
@@ -513,6 +521,7 @@
                 </div>
             </div>
 
+            <!-- ירוק -->
             <div class="color-section green">
                 <div class="color-title">
                     <span class="color-box" style="background-color: var(--clr-green);"></span>
@@ -528,6 +537,7 @@
                 </div>
             </div>
 
+            <!-- כחול -->
             <div class="color-section blue">
                 <div class="color-title">
                     <span class="color-box" style="background-color: var(--clr-blue);"></span>
@@ -542,6 +552,7 @@
                 </div>
             </div>
 
+            <!-- חברת חשמל/מים -->
             <div class="color-section neutral">
                 <div class="color-title">
                     <span class="color-box" style="background-color: var(--clr-neutral);"></span>
@@ -557,6 +568,7 @@
                 </div>
             </div>
 
+            <!-- רכבות -->
             <div class="color-section neutral">
                 <div class="color-title">
                     <span class="color-box" style="background-color: var(--clr-neutral);"></span>
@@ -572,18 +584,21 @@
                 </div>
             </div>
 
+            <!-- בית כלא -->
             <div class="form-group" style="margin-top:25px;">
                 <label>בית הכלא</label>
                 <span class="sub-label">מקום שבו כלת/חתן השמחה נוהגים לבלות בו הרבה</span>
                 <input type="text" name="jail_place" placeholder="לדוגמה: המיטה שלה, המשרד, המוסך...">
             </div>
 
+            <!-- אנשים חשובים -->
             <div class="form-group">
                 <label>אנשים חשובים</label>
                 <span class="sub-label">שמות של ילדים, נכדים, בני משפחה או חברים שתרצו להכניס למשחק (כולל ציון הקשר המשפחתי)</span>
                 <textarea name="important_people" placeholder="לדוגמה: דנה (בת), משה (חבר הכי טוב)..."></textarea>
             </div>
 
+            <!-- תוספות וסיפורים -->
             <div class="form-group">
                 <label>תוספות וסיפורים</label>
                 <span class="sub-label">אירועים חשובים, מצחיקים מההיסטוריה המשפחתית או כל פרט נוסף שיכול לתרום למשחק</span>
@@ -598,6 +613,7 @@
         </div>
     </form>
 
+    <!-- הודעת ההצלחה -->
     <div id="successMessage" class="success-message">
         <h2>מילאתם את השאלון בהצלחה! 🎉</h2>
         <p>ניצור אתכם קשר בהקדם להמשך התהליך ואישור הטיוטה לפני הדפסה.</p>
@@ -607,9 +623,10 @@
         </span>
         
         <div class="email-button-container">
-            <button type="button" onclick="openMailClient()" class="btn-email-contact">
+            <!-- קישור ישיר ל-Gmail שאינו נחסם על ידי פילטרים או פופאפים -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=customadegames@gmail.com&su=%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA%20%D7%9C%D7%9E%D7%A9%D7%97%D7%A7%20%D7%91%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%90%D7%99%D7%A9%D7%99%D7%AA" target="_blank" class="btn-email-contact">
                 ✉️ שלחו את התמונות למייל
-            </button>
+            </a>
         </div>
         
         <img src="" alt="לוגו הדסה" class="success-logo logo-src">
@@ -624,26 +641,6 @@
         document.querySelectorAll('.logo-src').forEach(img => {
             img.src = logoURL;
         });
-    }
-    
-    // פונקציית פתיחת המייל החכמה שמפנה ישירות ל-Gmail עם הכותרת החדשה בעברית
-    function openMailClient() {
-        const email = "customadegames@gmail.com";
-        const subject = "תמונות למשחק בהתאמה אישית"; // הכותרת המעודכנת
-        
-        // יצירת קישור ישיר למסך כתיבת הודעה בג'ימייל
-        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
-        
-        // פתיחת הקישור של ג'ימייל בטאב חדש
-        const startTime = new Date().getTime();
-        window.open(gmailUrl, '_blank');
-        
-        // מנגנון גיבוי למקרה חירום של חסימת חלונות קופצים או חוסר בחשבון גוגל
-        setTimeout(function() {
-            if (new Date().getTime() - startTime < 2000) {
-                alert("אם עמוד הג'ימייל לא נפתח אוטומטית, נא שלחו את התמונות ידנית לכתובת:\n" + email + "\n\nתחת הכותרת: תמונות למשחק בהתאמה אישית");
-            }
-        }, 1500);
     }
     
     let currentStep = 1;
